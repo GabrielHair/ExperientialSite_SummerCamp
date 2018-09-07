@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking Form</title>
+	<meta charset="utf-8">
+	<meta name="description" content="An illustrative website advertising a new campsite">
+    <meta name="author" content="Gabriel Hair">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="img/favicon.ico" rel="icon" type="image/ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+</head>
+<body>
+		<form action="contact.php" action="upload.php" method="POST" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Summer Camp Booking Form</legend>
+				<ul class="form-style-1">
+					<li>
+						<label>Name</label>
+						<input type="text" name="firstName" required placeholder="First Name" class="field-divided">
+						&nbsp;
+						<input type="text" name="surname" required placeholder="Surname" class="field-divided">
+					</li>
+					<li>
+						<label>Email</label>
+						<input type="email" name="email" required placeholder="Email address" class="field-long">
+					</li>
+					<li>
+						<label>Number of Guests</label>
+						<input type="radio" name="guests" value="1"> 1 <br>
+						<input type="radio" name="guests" value="2"> 2 <br>
+						<input type="radio" name="guests" value="3"> 3 <br>
+						<input type="radio" name="guests" value="4+"> 4+ <br>
+					</li>
+					<li>
+						<label>Subject</label>
+						<select name="Subject" class="field-select">
+							<option value="complaint">Booking</option>
+							<option value="complaint">Complaint</option>
+							<option value="goodNews">Good News</option>
+							<option value="general">General Enquiry</option>
+						</select>
+					</li>
+					<li>
+						<label>Comments</label>
+						<textarea name="Message" class="field-long field-textarea"></textarea>
+					</li>
+					<li>
+						<div>
+   							<label for="file">Copy of I.D or Drivers License</label>
+   							<input type="file" id="file" name="file" multiple>
+ 						</div>
+					</li>
+					<li>
+  						<label>Date-of-Birth</label>
+  						<input type="month" name="bdaymonth">
+					</li>
+					<li>
+						<label>Telephone</label> 
+						<input type="telNo" name="tel" placeholder="+27(xx)-xxx-xxxx">
+					</li>
+					<li>
+						<label>I Am Not a Robot</label>
+						<input type="checkbox" name="Robot" required placeholder="notRobot" class="notRobot">
+					</li>
+					<li>
+						<input type="submit" name="Send">
+					</li>
+				</ul>
+			</fieldset>
+			<a class="home" href="index.html">
+			Home
+			</a>
+	<img class="tree6b" src="img/Tree.svg">
+	<img class="bear2" src="img/bear.svg">
+	<img class="boulder" src="img/boulder.svg">
+	<img class="tree4b" src="img/Tree.svg">
+	<img class="tree3b" src="img/Tree.svg">
+	<img class="tree1b" src="img/Tree.svg">
+	<img class="tree2b" src="img/Tree.svg">
+</body>
+</html>
